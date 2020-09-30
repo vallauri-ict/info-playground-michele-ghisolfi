@@ -28,47 +28,71 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnForm2 = new System.Windows.Forms.Button();
-            this.btnForm2b = new System.Windows.Forms.Button();
+            this.btnAproF2 = new System.Windows.Forms.Button();
+            this.btnApriF2b = new System.Windows.Forms.Button();
+            this.txtPassata = new System.Windows.Forms.TextBox();
+            this.btnPassaTxt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnForm2
+            // btnAproF2
             // 
-            this.btnForm2.Location = new System.Drawing.Point(47, 24);
-            this.btnForm2.Name = "btnForm2";
-            this.btnForm2.Size = new System.Drawing.Size(75, 23);
-            this.btnForm2.TabIndex = 0;
-            this.btnForm2.Text = "Apri Form 2";
-            this.btnForm2.UseVisualStyleBackColor = true;
-            this.btnForm2.Click += new System.EventHandler(this.btnForm2_Click);
+            this.btnAproF2.Location = new System.Drawing.Point(47, 24);
+            this.btnAproF2.Name = "btnAproF2";
+            this.btnAproF2.Size = new System.Drawing.Size(75, 23);
+            this.btnAproF2.TabIndex = 0;
+            this.btnAproF2.Text = "Apri Form 2";
+            this.btnAproF2.UseVisualStyleBackColor = true;
+            this.btnAproF2.Click += new System.EventHandler(this.btnApriF2_Click);
             // 
-            // btnForm2b
+            // btnApriF2b
             // 
-            this.btnForm2b.Location = new System.Drawing.Point(128, 24);
-            this.btnForm2b.Name = "btnForm2b";
-            this.btnForm2b.Size = new System.Drawing.Size(75, 23);
-            this.btnForm2b.TabIndex = 1;
-            this.btnForm2b.Text = "Apri Form 2b";
-            this.btnForm2b.UseVisualStyleBackColor = true;
-            this.btnForm2b.Click += new System.EventHandler(this.btnForm2b_Click);
+            this.btnApriF2b.Location = new System.Drawing.Point(166, 24);
+            this.btnApriF2b.Name = "btnApriF2b";
+            this.btnApriF2b.Size = new System.Drawing.Size(75, 23);
+            this.btnApriF2b.TabIndex = 1;
+            this.btnApriF2b.Text = "Apri Form 2b";
+            this.btnApriF2b.UseVisualStyleBackColor = true;
+            this.btnApriF2b.Click += new System.EventHandler(this.btnApriF2b_Click);
+            // 
+            // txtPassata
+            // 
+            this.txtPassata.Location = new System.Drawing.Point(47, 67);
+            this.txtPassata.Name = "txtPassata";
+            this.txtPassata.Size = new System.Drawing.Size(100, 20);
+            this.txtPassata.TabIndex = 2;
+            // 
+            // btnPassaTxt
+            // 
+            this.btnPassaTxt.Location = new System.Drawing.Point(153, 67);
+            this.btnPassaTxt.Name = "btnPassaTxt";
+            this.btnPassaTxt.Size = new System.Drawing.Size(121, 23);
+            this.btnPassaTxt.TabIndex = 3;
+            this.btnPassaTxt.Text = "Passa TXT a F2";
+            this.btnPassaTxt.UseVisualStyleBackColor = true;
+            this.btnPassaTxt.Click += new System.EventHandler(this.btnPassaTxt_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnForm2b);
-            this.Controls.Add(this.btnForm2);
+            this.Controls.Add(this.btnPassaTxt);
+            this.Controls.Add(this.txtPassata);
+            this.Controls.Add(this.btnApriF2b);
+            this.Controls.Add(this.btnAproF2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnForm2;
-        private System.Windows.Forms.Button btnForm2b;
+        private System.Windows.Forms.Button btnAproF2;
+        private System.Windows.Forms.Button btnApriF2b;
+        private System.Windows.Forms.TextBox txtPassata;
+        private System.Windows.Forms.Button btnPassaTxt;
     }
 }
 
