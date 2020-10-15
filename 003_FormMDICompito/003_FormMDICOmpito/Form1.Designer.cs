@@ -28,10 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLbl = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.apriForm2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,16 +51,17 @@
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLbl});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 342);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 528);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(599, 26);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 10, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(687, 22);
             this.statusStrip1.TabIndex = 3;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // toolStripStatusLbl
             // 
             this.toolStripStatusLbl.Name = "toolStripStatusLbl";
-            this.toolStripStatusLbl.Size = new System.Drawing.Size(82, 20);
+            this.toolStripStatusLbl.Size = new System.Drawing.Size(65, 17);
             this.toolStripStatusLbl.Text = "Ciao a tutti";
             // 
             // menuStrip1
@@ -72,7 +71,8 @@
             this.menuToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(599, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(687, 24);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -84,27 +84,27 @@
             this.apriFormModleToolStripMenuItem,
             this.esciToolStripMenuItem});
             this.menuToolStripMenuItem1.Name = "menuToolStripMenuItem1";
-            this.menuToolStripMenuItem1.Size = new System.Drawing.Size(60, 24);
+            this.menuToolStripMenuItem1.Size = new System.Drawing.Size(50, 20);
             this.menuToolStripMenuItem1.Text = "&Menu";
             // 
             // apriForm2ToolStripMenuItem
             // 
             this.apriForm2ToolStripMenuItem.Name = "apriForm2ToolStripMenuItem";
-            this.apriForm2ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.apriForm2ToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.apriForm2ToolStripMenuItem.Text = "Apri Form 2";
             this.apriForm2ToolStripMenuItem.Click += new System.EventHandler(this.apriForm2ToolStripMenuItem_Click);
             // 
             // apriForm2bToolStripMenuItem
             // 
             this.apriForm2bToolStripMenuItem.Name = "apriForm2bToolStripMenuItem";
-            this.apriForm2bToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.apriForm2bToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.apriForm2bToolStripMenuItem.Text = "Apri Form 2b";
             this.apriForm2bToolStripMenuItem.Click += new System.EventHandler(this.apriForm2bToolStripMenuItem_Click);
             // 
             // apriFormModleToolStripMenuItem
             // 
             this.apriFormModleToolStripMenuItem.Name = "apriFormModleToolStripMenuItem";
-            this.apriFormModleToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.apriFormModleToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.apriFormModleToolStripMenuItem.Text = "Apri form modale";
             this.apriFormModleToolStripMenuItem.Click += new System.EventHandler(this.apriFormModleToolStripMenuItem_Click);
             // 
@@ -112,57 +112,48 @@
             // 
             this.esciToolStripMenuItem.Name = "esciToolStripMenuItem";
             this.esciToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.esciToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.esciToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.esciToolStripMenuItem.Text = "&Esci";
             // 
             // txtEtaFM
             // 
-            this.txtEtaFM.Location = new System.Drawing.Point(276, 68);
-            this.txtEtaFM.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEtaFM.Location = new System.Drawing.Point(207, 55);
             this.txtEtaFM.Name = "txtEtaFM";
             this.txtEtaFM.ReadOnly = true;
-            this.txtEtaFM.Size = new System.Drawing.Size(132, 22);
+            this.txtEtaFM.Size = new System.Drawing.Size(100, 20);
             this.txtEtaFM.TabIndex = 16;
-            this.txtEtaFM.TextChanged += new System.EventHandler(this.txtEtaFM_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(239, 73);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(179, 59);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 17);
+            this.label2.Size = new System.Drawing.Size(23, 13);
             this.label2.TabIndex = 15;
             this.label2.Text = "Età";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtNomeFM
             // 
-            this.txtNomeFM.Location = new System.Drawing.Point(66, 70);
-            this.txtNomeFM.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNomeFM.Location = new System.Drawing.Point(50, 57);
             this.txtNomeFM.Name = "txtNomeFM";
             this.txtNomeFM.ReadOnly = true;
-            this.txtNomeFM.Size = new System.Drawing.Size(132, 22);
+            this.txtNomeFM.Size = new System.Drawing.Size(100, 20);
             this.txtNomeFM.TabIndex = 14;
-            this.txtNomeFM.TextChanged += new System.EventHandler(this.txtNomeFM_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 73);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(10, 59);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 17);
+            this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 13;
             this.label1.Text = "Nome";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnPassaTxt
             // 
-            this.btnPassaTxt.Location = new System.Drawing.Point(152, 29);
-            this.btnPassaTxt.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPassaTxt.Location = new System.Drawing.Point(114, 24);
             this.btnPassaTxt.Name = "btnPassaTxt";
-            this.btnPassaTxt.Size = new System.Drawing.Size(161, 28);
+            this.btnPassaTxt.Size = new System.Drawing.Size(121, 23);
             this.btnPassaTxt.TabIndex = 11;
             this.btnPassaTxt.Text = "Passa TXT a F2";
             this.btnPassaTxt.UseVisualStyleBackColor = true;
@@ -170,18 +161,16 @@
             // 
             // txtPassata
             // 
-            this.txtPassata.Location = new System.Drawing.Point(12, 32);
-            this.txtPassata.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPassata.Location = new System.Drawing.Point(9, 26);
             this.txtPassata.Name = "txtPassata";
-            this.txtPassata.Size = new System.Drawing.Size(132, 22);
+            this.txtPassata.Size = new System.Drawing.Size(100, 20);
             this.txtPassata.TabIndex = 10;
-            this.txtPassata.TextChanged += new System.EventHandler(this.txtPassata_TextChanged);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(599, 368);
+            this.ClientSize = new System.Drawing.Size(687, 550);
             this.Controls.Add(this.txtEtaFM);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNomeFM);
@@ -192,9 +181,9 @@
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
@@ -207,7 +196,6 @@
         #endregion
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLbl;
-        private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem apriForm2ToolStripMenuItem;

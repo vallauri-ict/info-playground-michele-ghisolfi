@@ -32,11 +32,6 @@ namespace _003_FormMDICOmpito
             this.txt1 = txt1;
         }
 
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnLeggiValore_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Valore = " + n); 
