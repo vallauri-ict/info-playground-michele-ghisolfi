@@ -29,45 +29,49 @@
         private void InitializeComponent()
         {
             this.txtPush = new System.Windows.Forms.TextBox();
-            this.btnPush = new System.Windows.Forms.Button();
-            this.btnPull = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnStampa = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtPush
             // 
-            this.txtPush.Location = new System.Drawing.Point(26, 33);
+            this.txtPush.Location = new System.Drawing.Point(35, 41);
+            this.txtPush.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPush.Name = "txtPush";
-            this.txtPush.Size = new System.Drawing.Size(118, 20);
+            this.txtPush.Size = new System.Drawing.Size(156, 22);
             this.txtPush.TabIndex = 0;
             // 
-            // btnPush
+            // btnAdd
             // 
-            this.btnPush.Location = new System.Drawing.Point(150, 31);
-            this.btnPush.Name = "btnPush";
-            this.btnPush.Size = new System.Drawing.Size(147, 23);
-            this.btnPush.TabIndex = 1;
-            this.btnPush.Text = "Aggiungi coda Stampa";
-            this.btnPush.UseVisualStyleBackColor = true;
-            this.btnPush.Click += new System.EventHandler(this.btnPush_Click);
+            this.btnAdd.Location = new System.Drawing.Point(200, 38);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(196, 28);
+            this.btnAdd.TabIndex = 1;
+            this.btnAdd.Text = "Aggiungi coda Stampa";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // btnPull
+            // btnStampa
             // 
-            this.btnPull.Location = new System.Drawing.Point(90, 85);
-            this.btnPull.Name = "btnPull";
-            this.btnPull.Size = new System.Drawing.Size(147, 23);
-            this.btnPull.TabIndex = 2;
-            this.btnPull.Text = "Stampa";
-            this.btnPull.UseVisualStyleBackColor = true;
-            this.btnPull.Click += new System.EventHandler(this.btnPull_Click);
+            this.btnStampa.Location = new System.Drawing.Point(120, 105);
+            this.btnStampa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnStampa.Name = "btnStampa";
+            this.btnStampa.Size = new System.Drawing.Size(196, 28);
+            this.btnStampa.TabIndex = 2;
+            this.btnStampa.Text = "Stampa";
+            this.btnStampa.UseVisualStyleBackColor = true;
+            this.btnStampa.Click += new System.EventHandler(this.btnStampa_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(340, 120);
-            this.Controls.Add(this.btnPull);
-            this.Controls.Add(this.btnPush);
+            this.ClientSize = new System.Drawing.Size(453, 148);
+            this.Controls.Add(this.btnStampa);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtPush);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -76,8 +80,8 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button btnPush;
-        private System.Windows.Forms.Button btnPull;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnStampa;
         public System.Windows.Forms.TextBox txtPush;
     }
 }

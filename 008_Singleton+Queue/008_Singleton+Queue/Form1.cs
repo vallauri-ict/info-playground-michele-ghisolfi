@@ -24,12 +24,12 @@ namespace _008_Singleton_Queue
             InitializeComponent();
         }
 
-        private void btnPush_Click(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
             if (txtPush.Text != "")
             {
                 clsSingleton s = clsSingleton.GetClsSingleton();
-                s.push(txtPush.Text);
+                s.add(txtPush.Text);
             }
             else
             {
@@ -37,10 +37,10 @@ namespace _008_Singleton_Queue
             }
         }
 
-        private void btnPull_Click(object sender, EventArgs e)
+        private void btnStampa_Click(object sender, EventArgs e)
         {
             clsSingleton s = clsSingleton.GetClsSingleton();
-            s.pull();
+            s.stampa();
         }
     }
 }

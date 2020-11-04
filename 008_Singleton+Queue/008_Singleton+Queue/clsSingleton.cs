@@ -17,22 +17,22 @@ namespace _008_Singleton_Queue
 
         }
 
-        public void push (string s)
+        public void add (string s)
         {
             codaStampa.Enqueue(s);
             System.Windows.Forms.MessageBox.Show(s + " aggiunto alla coda");
         }
 
-        public void pull ()
+        public void stampa ()
         {
             try
             {
                 string s = codaStampa.Dequeue();
                 System.Windows.Forms.MessageBox.Show(s);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                System.Windows.Forms.MessageBox.Show("Coda vuota");
+                System.Windows.Forms.MessageBox.Show(ex.Message);
             }
         }
 
