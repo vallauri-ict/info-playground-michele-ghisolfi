@@ -350,4 +350,4 @@ MigrationBackup/
 .ionide/
 
 # Eliminazione file Utenti 
-Utenti.*
+Utenti.txt
