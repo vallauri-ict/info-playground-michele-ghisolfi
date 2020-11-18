@@ -20,7 +20,7 @@ namespace _011_Lista
         }
 
         List<Libro> miaLista = new List<Libro>();
-        List<Books> listaLibri = new List<Books>();
+        
 
         public Form1()
         {
@@ -28,7 +28,7 @@ namespace _011_Lista
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
-        {
+        { 
             Libro l;
             l.ID = Convert.ToInt32(txtId.Text);
             l.Titolo = txtTitolo.Text;
@@ -42,34 +42,32 @@ namespace _011_Lista
             string s = "";
             foreach (var elemento in miaLista)
             {
-                s += elemento.Titolo + "\n";  
+                s += elemento.Titolo + "\n";
             }
             MessageBox.Show(s);
         }
 
         private void btnAggiungiObj_Click(object sender, EventArgs e)
         {
-            Books b = new Books();
-            b.autore = txtAutore.Text;
-            b.id = Convert.ToInt32(txtId.Text);
-            b.titolo = txtTitolo.Text;
-
-            listaLibri.Add(b);
+            clsLibri.AggiungiLibro(txtAutore.Text, txtTitolo.Text, Convert.ToInt32(txtId.Text));
         }
 
-        private void btnVisualizzaObj_Click(object sender, EventArgs e)
+        private void btnVisualizzaObj_Click_1(object sender, EventArgs e)
         {
-            string s = "";
-            foreach (Books item in listaLibri)
-            {
-                s += item.titolo + "\n";
-            }
-            MessageBox.Show(s);
+            clsLibri.VisualizzaLibri();
         }
 
         private void btnFind_Click(object sender, EventArgs e)
         {
-
+            string s = clsLibri.Find(txtDaCercare.Text);
+            MessageBox.Show(s);
         }
+
+        private void btnFindAll_Click(object sender, EventArgs e)
+        {
+            string s = clsLibri.FindAll(txtDaCercare.Text);
+            MessageBox.Show(s);
+        }
+
     }
 }

@@ -140,6 +140,7 @@
             this.btnFindAll.TabIndex = 10;
             this.btnFindAll.Text = "Find All";
             this.btnFindAll.UseVisualStyleBackColor = true;
+            this.btnFindAll.Click += new System.EventHandler(this.btnFindAll_Click);
             // 
             // btnVisualizzaObj
             // 
@@ -149,7 +150,7 @@
             this.btnVisualizzaObj.TabIndex = 11;
             this.btnVisualizzaObj.Text = "Visualizza Obj";
             this.btnVisualizzaObj.UseVisualStyleBackColor = true;
-            this.btnVisualizzaObj.Click += new System.EventHandler(this.btnVisualizzaObj_Click);
+            this.btnVisualizzaObj.Click += new System.EventHandler(this.btnVisualizzaObj_Click_1);
             // 
             // label4
             // 
