@@ -21,11 +21,12 @@ namespace _013_GestioneProntoSoccorso
     public partial class Form1 : Form
     {
         string[] coloriUrgenza = { "Rosso", "Giallo", "Verde", "Bianco" };
-        
+
         public Form1()
         {
             InitializeComponent();
             cmbColore.SelectedIndex = 0;
+            setQueue();
         }
 
         struct Paziente
@@ -33,69 +34,60 @@ namespace _013_GestioneProntoSoccorso
             public string Nome;
             public int Eta;
             public string Colore;
+            public int Temperatura;
         }
 
-        Queue<Paziente> QueueRosso = new Queue<Paziente>();
-        Queue<Paziente> QueueGiallo = new Queue<Paziente>();
-        Queue<Paziente> QueueVerde = new Queue<Paziente>();
-        Queue<Paziente> QueueBianco = new Queue<Paziente>();
+        /*
+         * Priorità gestita in base all' indice. 
+         * 0 = priorità massima
+         * vetQueue.Lenght = priorità minima
+         */
+        Queue<Paziente>[] vetQueue = new Queue<Paziente>[4];
+
+        private void setQueue()
+        {
+            for(int i=0; i<vetQueue.Length; i++)
+            {
+                vetQueue[i] = new Queue<Paziente>();
+            }    
+        }
 
         private void btnRegistra_Click(object sender, EventArgs e)
         {
-            Paziente p;
-            p.Nome = txtNome.Text;
-            bool aus = Int32.TryParse(txtEta.Text, out p.Eta);
-            if (aus)
+            if (txtNome.Text != " ")
             {
-                p.Colore = cmbColore.SelectedItem.ToString();
-                switch (cmbColore.Text)
+                if (Int32.TryParse(txtEta.Text, out int eta))
                 {
-                    case "Rosso":
-                        QueueRosso.Enqueue(p);
-                        break;
-                    case "Giallo":
-                        QueueGiallo.Enqueue(p);
-                        break;
-                    case "Verde":
-                        QueueVerde.Enqueue(p);
-                        break;
-                    case "Bianco":
-                        QueueBianco.Enqueue(p);
-                        break;
-                    default:
-                        MessageBox.Show("Inserire un colore");
-                        break;
+                    Paziente p;
+                    p.Colore = cmbColore.SelectedItem.ToString();
+                    p.Eta = eta;
+                    Random rnd = new Random();
+                    p.Temperatura = rnd.Next(35, 41);
+                    p.Nome = txtNome.Text;
+                    vetQueue[cmbColore.SelectedIndex].Enqueue(p);
+                }
+                else
+                {
+                    MessageBox.Show("Età inserita NON correttamente");
                 }
             }
             else
             {
-                MessageBox.Show("Età inserita NON correttamente");
+                MessageBox.Show("Inserire un nome");
             }
             
         }
 
-        private void btnLiberaPaziente_Click(object sender, EventArgs e)
+        private void btnInfermiere_Click(object sender, EventArgs e)
         {
-            if (QueueRosso.Count > 0)
+            foreach (var item in vetQueue)
             {
-                QueueRosso.Dequeue();
-            }
-            else
-            {
-                if (QueueGiallo.Count > 0)
+                if (item.Count>0)
                 {
-                    QueueGiallo.Dequeue();
-                }
-                else
-                {
-                    if (QueueVerde.Count > 0)
-                    {
-                        QueueVerde.Dequeue();
-                    }
-                    else
-                    {
-                        QueueBianco.Dequeue();
-                    }
+                    Paziente p;
+                    p = item.Dequeue();
+                    lblUltimoPazienteVisitato.Text = p.Nome + " - " + p.Eta + " Anni - " + p.Temperatura + "C° - Codice" + p.Colore;
+                    break;
                 }
             }
         }

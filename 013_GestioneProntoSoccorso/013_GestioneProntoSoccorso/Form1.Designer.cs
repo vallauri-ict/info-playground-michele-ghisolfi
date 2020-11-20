@@ -35,7 +35,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.cmbColore = new System.Windows.Forms.ComboBox();
             this.btnRegistra = new System.Windows.Forms.Button();
-            this.btnLiberaPaziente = new System.Windows.Forms.Button();
+            this.btnInfermiere = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblUltimoPazienteVisitato = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Nome
@@ -102,22 +105,51 @@
             this.btnRegistra.UseVisualStyleBackColor = true;
             this.btnRegistra.Click += new System.EventHandler(this.btnRegistra_Click);
             // 
-            // btnLiberaPaziente
+            // btnInfermiere
             // 
-            this.btnLiberaPaziente.Location = new System.Drawing.Point(358, 58);
-            this.btnLiberaPaziente.Name = "btnLiberaPaziente";
-            this.btnLiberaPaziente.Size = new System.Drawing.Size(125, 125);
-            this.btnLiberaPaziente.TabIndex = 7;
-            this.btnLiberaPaziente.Text = "LIBERA PAZIENTE";
-            this.btnLiberaPaziente.UseVisualStyleBackColor = true;
-            this.btnLiberaPaziente.Click += new System.EventHandler(this.btnLiberaPaziente_Click);
+            this.btnInfermiere.Location = new System.Drawing.Point(358, 58);
+            this.btnInfermiere.Name = "btnInfermiere";
+            this.btnInfermiere.Size = new System.Drawing.Size(125, 125);
+            this.btnInfermiere.TabIndex = 7;
+            this.btnInfermiere.Text = "LIBERA INFERMIERE";
+            this.btnInfermiere.UseVisualStyleBackColor = true;
+            this.btnInfermiere.Click += new System.EventHandler(this.btnInfermiere_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(133, 223);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(46, 17);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "label3";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(21, 223);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(203, 21);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Ulimo pazoente visitato: ";
+            // 
+            // lblUltimoPazienteVisitato
+            // 
+            this.lblUltimoPazienteVisitato.AutoSize = true;
+            this.lblUltimoPazienteVisitato.Location = new System.Drawing.Point(201, 223);
+            this.lblUltimoPazienteVisitato.Name = "lblUltimoPazienteVisitato";
+            this.lblUltimoPazienteVisitato.Size = new System.Drawing.Size(0, 21);
+            this.lblUltimoPazienteVisitato.TabIndex = 10;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(558, 264);
-            this.Controls.Add(this.btnLiberaPaziente);
+            this.ClientSize = new System.Drawing.Size(558, 271);
+            this.Controls.Add(this.lblUltimoPazienteVisitato);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.btnInfermiere);
             this.Controls.Add(this.btnRegistra);
             this.Controls.Add(this.cmbColore);
             this.Controls.Add(this.label2);
@@ -141,7 +173,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cmbColore;
         private System.Windows.Forms.Button btnRegistra;
-        private System.Windows.Forms.Button btnLiberaPaziente;
+        private System.Windows.Forms.Button btnInfermiere;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblUltimoPazienteVisitato;
     }
 }
 
