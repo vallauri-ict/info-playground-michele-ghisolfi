@@ -16,11 +16,11 @@ namespace _018_OOP_PersoneStudenti
             if (true)
             {
                 // controllo tutti valori ok
+                this.nome = nome;
+                this.cognome = cognome;
+                this.sesso = sesso;
+                this.eta = eta;
             }
-            this.nome = nome;
-            this.cognome = cognome;
-            this.sesso = sesso;
-            this.eta = eta;
         }
 
         public string GetNome()
