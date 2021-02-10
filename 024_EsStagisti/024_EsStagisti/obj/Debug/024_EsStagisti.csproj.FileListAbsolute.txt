@@ -1,0 +1,10 @@
+D:\Scuola\4_INF\Info\info-playground-michele-ghisolfi\024_EsStagisti\024_EsStagisti\bin\Debug\024_EsStagisti.exe.config
+D:\Scuola\4_INF\Info\info-playground-michele-ghisolfi\024_EsStagisti\024_EsStagisti\bin\Debug\024_EsStagisti.exe
+D:\Scuola\4_INF\Info\info-playground-michele-ghisolfi\024_EsStagisti\024_EsStagisti\bin\Debug\024_EsStagisti.pdb
+D:\Scuola\4_INF\Info\info-playground-michele-ghisolfi\024_EsStagisti\024_EsStagisti\obj\Debug\024_EsStagisti.csprojAssemblyReference.cache
+D:\Scuola\4_INF\Info\info-playground-michele-ghisolfi\024_EsStagisti\024_EsStagisti\obj\Debug\_024_EsStagisti.Properties.Resources.resources
+D:\Scuola\4_INF\Info\info-playground-michele-ghisolfi\024_EsStagisti\024_EsStagisti\obj\Debug\024_EsStagisti.csproj.GenerateResource.cache
+D:\Scuola\4_INF\Info\info-playground-michele-ghisolfi\024_EsStagisti\024_EsStagisti\obj\Debug\024_EsStagisti.csproj.CoreCompileInputs.cache
+D:\Scuola\4_INF\Info\info-playground-michele-ghisolfi\024_EsStagisti\024_EsStagisti\obj\Debug\024_EsStagisti.exe
+D:\Scuola\4_INF\Info\info-playground-michele-ghisolfi\024_EsStagisti\024_EsStagisti\obj\Debug\024_EsStagisti.pdb
+D:\Scuola\4_INF\Info\info-playground-michele-ghisolfi\024_EsStagisti\024_EsStagisti\obj\Debug\_024_EsStagisti.Form1.resources
