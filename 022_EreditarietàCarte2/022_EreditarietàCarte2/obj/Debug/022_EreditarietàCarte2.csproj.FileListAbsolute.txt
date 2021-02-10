@@ -1,0 +1,4 @@
+D:\Scuola\4_INF\Info\info-playground-michele-ghisolfi\022_EreditarietàCarte2\022_EreditarietàCarte2\obj\Debug\022_EreditarietàCarte2.csprojAssemblyReference.cache
+D:\Scuola\4_INF\Info\info-playground-michele-ghisolfi\022_EreditarietàCarte2\022_EreditarietàCarte2\obj\Debug\_022_EreditarietàCarte2.Properties.Resources.resources
+D:\Scuola\4_INF\Info\info-playground-michele-ghisolfi\022_EreditarietàCarte2\022_EreditarietàCarte2\obj\Debug\022_EreditarietàCarte2.csproj.GenerateResource.cache
+D:\Scuola\4_INF\Info\info-playground-michele-ghisolfi\022_EreditarietàCarte2\022_EreditarietàCarte2\obj\Debug\022_EreditarietàCarte2.csproj.CoreCompileInputs.cache
