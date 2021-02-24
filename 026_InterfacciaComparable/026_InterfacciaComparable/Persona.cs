@@ -28,7 +28,7 @@ namespace _026_InterfacciaComparable
         {
             if (obj == null)
             {
-                return 1; // un oggetto null è più piccolo di true
+                return 1; // un oggetto null è più piccolo di tutti
             }
             Persona p = obj as Persona;
             return String.Compare(Cognome, p.Cognome, true); // case unsensitive
